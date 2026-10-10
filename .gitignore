@@ -1,0 +1,86 @@
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+build/
+dist/
+.eggs/
+
+# ---------- Virtual environments ----------
+venv/
+.venv/
+env/
+ENV/
+.conda/
+
+# ---------- Jupyter ----------
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+
+# ---------- Secrets and config ----------
+.env
+.env.*
+*.key
+*.pem
+secrets.json
+credentials.json
+
+# ---------- Data (keep folders, ignore contents) ----------
+data/raw/*
+data/processed/*
+data/external/*
+*.csv
+*.xlsx
+*.parquet
+*.h5
+*.hdf5
+*.zip
+*.tar.gz
+!data/**/.gitkeep
+# If your dataset is tiny and you want to commit it, remove the line
+# for its file type above or add an exception, e.g. !data/raw/student-mat.csv
+
+# ---------- Models and artifacts ----------
+models/*.pkl
+models/*.joblib
+models/*.pt
+models/*.pth
+models/*.h5
+models/*.onnx
+*.ckpt
+checkpoints/
+saved_models/
+
+# ---------- Experiment tracking and logs ----------
+mlruns/
+wandb/
+runs/
+lightning_logs/
+tensorboard/
+logs/
+*.log
+
+# ---------- Outputs ----------
+outputs/
+results/
+figures/*.png
+reports/*.html
+
+# ---------- Testing and coverage ----------
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# ---------- Large data versioning (if using DVC) ----------
+/.dvc/cache
+/.dvc/tmp
+
+# ---------- IDEs and OS ----------
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
